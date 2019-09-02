@@ -1,6 +1,6 @@
 
 
-[View my portfolio online here](williambeckaskenaizer.github.io)
+[View my portfolio online here](http://williambeckaskenaizer.github.io)
 
 
 
