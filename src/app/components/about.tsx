@@ -9,8 +9,8 @@ import {
   useTransform,
   MotionValue,
 } from "framer-motion";
-import UilGithub from "@iconscout/react-unicons/icons/uil-github";
-import UilLinkedIn from "@iconscout/react-unicons/icons/uil-linkedin";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGit } from "react-icons/fa";
 
 interface Props {
   children?: React.ReactNode;
@@ -68,13 +68,13 @@ function About({ children }: Props) {
               className="h-12 w-12 mx-4"
               href="https://github.com/williambeckaskenaizer"
             >
-              <UilGithub className="w-12 h-12 mt-36 mr-6" />
+              <FaGit className="w-12 h-12 mt-36 mr-6" />
             </a>
             <a
               className="h-12 w-12 mx-4"
               href="https://www.linkedin.com/in/william-beck-askenaizer/"
             >
-              <UilLinkedIn className="w-12 h-12 mt-36" />
+              <FaLinkedin className="w-12 h-12 mt-36" />
             </a>
           </div>
         </div>

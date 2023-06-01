@@ -1,11 +1,7 @@
 import React, { useRef } from "react";
-import Image from "next/image";
-import ResumeButton from "./resume-button";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import {
   motion,
-  useScroll,
-  useSpring,
   useTransform,
   MotionValue,
   useInView,

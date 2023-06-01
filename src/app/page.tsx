@@ -3,7 +3,6 @@ import About from "./components/about";
 import Landing from "./components/landing";
 import Projects from "./components/projects";
 import Section from "./components/section";
-import TopBar from "./components/top-bar";
 
 export default function Home() {
 

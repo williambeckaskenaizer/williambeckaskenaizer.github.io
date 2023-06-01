@@ -1,5 +1,5 @@
-import UilGithub from "@iconscout/react-unicons/icons/uil-github";
-import UilLink from "@iconscout/react-unicons/icons/uil-link";
+import { FaGit } from "react-icons/fa";
+import { FaLink } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 interface Props {
@@ -31,12 +31,12 @@ export default function Project({
       <div className="w-6 h-6 flex flex-row">
         {github && (
           <a className="w-6 h-6 mx-1" href={github} target="_blank">
-            <UilGithub />
+            <FaGit />
           </a>
         )}
         {link && (
           <a className="w-6 h-6 mx-1" href={link} target="_blank">
-            <UilLink />
+            <FaLink />
           </a>
         )}
       </div>

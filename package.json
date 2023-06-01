@@ -1,16 +1,16 @@
 {
-  "name": "nextfolio",
+  "name": "williambeckaskenaizer.github.io",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "next build && touch out/.nojekyll && git add out/ && git commit -m \"Deploy\" && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
-    "@iconscout/react-unicons": "^2.0.2",
     "@types/node": "20.2.4",
     "@types/react": "18.2.7",
     "@types/react-dom": "18.2.4",
@@ -22,6 +22,7 @@
     "postcss": "8.4.23",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.9.0",
     "react-scroll": "^1.8.9",
     "tailwindcss": "3.3.2",
     "typescript": "5.0.4"
