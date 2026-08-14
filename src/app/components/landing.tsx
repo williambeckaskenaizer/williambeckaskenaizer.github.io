@@ -27,19 +27,19 @@ function Landing({ children }: Props) {
     >
       <h1
         //   style={{ fontFamily: "ClashDisplay-Medium" }}
-        className="mt-48 mx-auto max-w-4xl font-display text-6xl font-bold tracking-normal text-white sm:text-5xl"
+        className="mt-24 sm:mt-48 mx-auto max-w-4xl font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-normal text-white"
       >
         Hey There!
       </h1>
       <div className="flex flex-col justify-center items-center">
-        <h2 className="text-center mb-20 mt-8 mx-24 max-w-xl text-lg sm:text-white leading-7">
+        <h2 className="text-center mb-20 mt-8 mx-6 sm:mx-24 max-w-xl text-base sm:text-lg text-white leading-7">
           I'm Will, and I'm a full-stack software engineer! Thank you for
           visiting my site.
         </h2>
         <ResumeButton />
       </div>
-      <p className="absolute bottom-8 -translate-x-1 text-zinc-400 left-1/2 w-8 h-8">About</p>
-      <ChevronDownIcon className="absolute bottom-1 left-1/2 w-8 h-8 animate-bounce" />
+      <p className="absolute bottom-12 -translate-x-1 text-zinc-400 left-1/2 w-8 h-8 text-xs">About</p>
+      <ChevronDownIcon className="absolute bottom-3 left-1/2 w-6 h-6 sm:w-8 sm:h-8 animate-bounce text-white" />
     </motion.div>
     // </motion.section>
   );

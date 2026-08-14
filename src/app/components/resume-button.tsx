@@ -20,7 +20,7 @@ export default function ResumeButton() {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 1 }}
         transition={{ type: "spring", stiffness: 400, damping: 20 }}
-        className="w-48 h-12 outline-2 border-2 border-white flex justify-center items-center hover:text-red rounded-xl mt-12"
+        className="w-48 h-12 outline-2 border-2 border-white flex justify-center items-center hover:text-red rounded-xl mt-12 text-white"
       >
         {buttonText}
       </motion.button>

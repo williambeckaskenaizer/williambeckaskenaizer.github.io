@@ -18,23 +18,21 @@ function useParallax(value: MotionValue<number>, distance: number) {
 
 const projects = [
   {
-    title: "Latent Labs",
-    description: "An AI Design Tool for Non-Designers",
+    title: "Blurry Faces",
+    description: "A Street Photography project allowing users to capture photos from streetview with configurable camera settings",
     image:
       "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/typescript/typescript.png",
-    link: "https://latentlabs.art/",
+    link: "https://williambeckaskenaizer.github.io/blurry-faces/",
     github: null,
     tech: [
       "React",
       "TypeScript",
-      "Next.js",
-      "TailwindCSS",
-      "Framer Motion",
-      "Postgres",
+      "Vite",
+      "Google Streetview API"
     ],
   },
   {
-    title: "Reimagine Bot",
+    title: "Latent Labs",
     description: "A Discord bot allowing users to generate 3D Meshes using AI",
     image:
       "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
@@ -102,15 +100,15 @@ function Projects({ children }: Props) {
   const isInView = useInView(ref, { once: true });
   return (
     // <motion.section className="bg-red-900 w-screen h-screen flex flex-col text-center text-white">
-    <div id="projects" className="mt-48 z-10 h-screen flex flex-col items-center bg-red-00">
+    <div id="projects" className="pt-4 z-10 min-h-screen flex flex-col items-center bg-red-00 px-4 sm:px-0">
       <h1
         //   style={{ fontFamily: "ClashDisplay-Medium" }}
-        className="mt-44 mx-auto max-w-4xl font-display text-6xl font-medium tracking-normal text-white sm:text-5xl"
+        className="mt-2 mx-auto max-w-4xl font-display text-4xl sm:text-5xl lg:text-6xl font-medium tracking-normal text-white"
       >
         Projects
       </h1>
-      <div className="flex flex-col mt-12 justify-center items-center">
-        <h2 className="mt-8 mx-24 max-w-xl text-center text-lg sm:text-white leading-7 mb-24">
+      <div className="flex flex-col mt-8 justify-center items-center">
+        <h2 className="mt-8 mx-4 sm:mx-24 max-w-xl text-center text-base sm:text-lg text-white leading-7 mb-12 sm:mb-24">
           I love to build things. I'm always looking for new projects to dig
           into, and I love making things that people like using! Check out some of my work below.
         </h2>
@@ -124,7 +122,7 @@ function Projects({ children }: Props) {
           variants={projectVariants}
           initial="hidden"
           animate={["visible"]}
-          className="md:flex md:flex-row sm:grid sm:grid-cols-2"
+          className="flex flex-wrap justify-center gap-2 sm:gap-4 lg:gap-6"
         >
           {projects.map((p) => {
             return (
